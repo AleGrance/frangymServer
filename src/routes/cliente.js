@@ -26,7 +26,7 @@ module.exports = app => {
         .get((req, res) => {
             Cliente.findOne({
                     where: {
-                        id_cliente: req.params.id
+                        ci_cliente: req.params.id
                     }
                 })
                 .then(result => res.json(result))
